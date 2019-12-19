@@ -1,6 +1,6 @@
 ## TRAINS and TOWNS problem
 
-Path counting tasks were implemented using BFS over the adjecency matrix
+Path counting tasks were implemented using dfs + dynamic programming over the adjecency matrix.
 
 Optimal distance tasks were implemented using Dijkstra algorithm with priority queue.
 
