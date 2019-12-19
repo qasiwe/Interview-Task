@@ -15,6 +15,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VCFYQH2FyTFKX6sFzPyq0gy5OS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,6 +29,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -122,11 +126,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Android JUnit.PathGenerationTest.shortestPathBetweenNodes" />
       <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByDistance" />
       <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByStops" />
       <item itemvalue="Android JUnit.PathGenerationTest.distanceForExactRoute" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
@@ -193,6 +197,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="31" width="703" height="837" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576756823766" />
+    <state x="397" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1576760988237">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="397" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1576760988237" />
     <state x="63" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576756866302">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
