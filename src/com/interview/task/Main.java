@@ -25,10 +25,10 @@ public class Main {
         System.out.println("Output #3: " + path.distanceForExactRoute(new String[]{"A", "D", "C"}));
         System.out.println("Output #4: " + path.distanceForExactRoute(new String[]{"A", "E", "B", "C", "D"}));
         System.out.println("Output #5: " + path.distanceForExactRoute(new String[]{"A", "E", "D"}));
-        System.out.println("Output #6: " + path.bfsNumberOfTripsByStops(1, 3, "C", "C"));
-        System.out.println("Output #7: " + path.bfsNumberOfTripsByStops(4, 4, "A", "C"));
+        System.out.println("Output #6: " + path.numberOfTripsByStops(1, 3, "C", "C"));
+        System.out.println("Output #7: " + path.numberOfTripsByStops(4, 4, "A", "C"));
         System.out.println("Output #8: " + path.shortestPathBetweenNodes("A", "C"));
         System.out.println("Output #9: " + path.shortestPathBetweenNodes("B", "B"));
-        System.out.println("Output #10: " + path.bfsNumberOfTripsByDistance(30, "C", "C"));
+        System.out.println("Output #10: " + path.numberOfTripsByDistance(30, "C", "C"));
     }
 }

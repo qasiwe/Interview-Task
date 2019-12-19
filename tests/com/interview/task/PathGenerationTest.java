@@ -16,15 +16,15 @@ class PathGenerationTest {
     @Test
     void bfsNumberOfTripsByDistance() {
         PathGeneration path = new PathGeneration("AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7");
-        assertEquals(6,path.bfsNumberOfTripsByDistance(30,"A","D"));
-        assertEquals(7,path.bfsNumberOfTripsByDistance(30,"C","C"));
+        assertEquals(6,path.numberOfTripsByDistance(30,"A","D"));
+        assertEquals(7,path.numberOfTripsByDistance(30,"C","C"));
     }
 
     @Test
     void bfsNumberOfTripsByStops() {
         PathGeneration path = new PathGeneration("AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7");
-        assertEquals(10,path.bfsNumberOfTripsByStops(1,10,"D","E"));
-        assertEquals(2,path.bfsNumberOfTripsByStops(1,5,"B","D"));
+        assertEquals(59,path.numberOfTripsByStops(1,10,"D","E"));
+        assertEquals(3,path.numberOfTripsByStops(1,5,"B","D"));
     }
 
     @Test

@@ -68,13 +68,58 @@ public class PathGeneration {
     }
 
 
-    public Integer bfsNumberOfTripsByDistance(Integer maxDistance,
+    public Integer numberOfTripsByDistance(Integer maxDistance,
                                               String departure,
                                               String destination) {
-        // Number of trips by distance is a simple bfs traverse of a graph O(V+E)
-        return bfsNumberOfTripsByDistance(_adjacencyList, maxDistance, departure, destination);
+        // Number of trips by distance is a simple bfs traverse of a graph
+        //return bfsNumberOfTripsByDistance(_adjacencyList, maxDistance, departure, destination);
+        // Dynamic programming implementation. Faster than the bfs solution.
+        return dfsNumberOfTripsByDistance(_adjacencyList, maxDistance, departure, destination);
     }
-
+    private Integer dfsNumberOfTripsByDistance(HashMap<String, HashMap<String, Edge>> adjacencyList,
+                                               Integer maxDistance,
+                                               String departure,
+                                               String destination) {
+        //Memo initialization. Contains key: position + distance. val: results computed so far with the same parameters
+        HashMap<String,Integer> store = new HashMap();
+        return dfsNumberOfTripsByDistanceBacktrack(adjacencyList, store, maxDistance,maxDistance,departure,destination);
+    }
+    private Integer dfsNumberOfTripsByDistanceBacktrack(HashMap<String, HashMap<String, Edge>> adjacencyList,
+                           HashMap<String,Integer> store,
+                           Integer distance,
+                           Integer maxDistance,
+                           String position,
+                           String destination){
+        //base case
+        if (distance <= 0){
+            return 0;
+        }
+        String tempKey = position + String.valueOf(distance);
+        //Checking if the current state is in the  memo
+        if (store.containsKey(tempKey)){
+            return store.get(tempKey);
+        }
+        //Two cases of the current result. Where destination is eqal to the current position, variable is equal to 1
+        Integer result = 0;
+        if (destination.equals(position) && distance != maxDistance){
+            result = 1;
+        }
+        //iterating through adjacency list
+        if (adjacencyList.containsKey(position)) {
+            for (String item : adjacencyList.get(position).keySet()) {
+                result +=  dfsNumberOfTripsByDistanceBacktrack(adjacencyList,
+                        store,
+                        distance-adjacencyList.get(position).get(item).getDistance(),
+                        maxDistance,
+                        item,
+                        destination);
+            }
+        }
+        //updating memo
+        store.put(position+String.valueOf(distance),result);
+        return result;
+    }
+    // currently unused
     private Integer bfsNumberOfTripsByDistance(HashMap<String, HashMap<String, Edge>> adjacencyList,
                                                Integer maxDistance,
                                                String departure,
@@ -115,12 +160,67 @@ public class PathGeneration {
         return result;
     }
 
-    public Integer bfsNumberOfTripsByStops(Integer minStops,
+    public Integer numberOfTripsByStops(Integer minStops,
                                            Integer maxStops,
                                            String departure,
                                            String destination) {
         //almost the same as bfsNumberOfTripsByDistance, but it counts routes within min and max stops
-        return bfsNumberOfTripsByStops(_adjacencyList, minStops, maxStops, departure, destination);
+        //return bfsNumberOfTripsByStops(_adjacencyList, minStops, maxStops, departure, destination);
+        //rewritten with dynamic programming approach. Increased asymptotic performance.
+        return dfsNumberOfTripsByStops(_adjacencyList, minStops, maxStops, departure, destination);
+    }
+    private Integer dfsNumberOfTripsByStops(HashMap<String, HashMap<String, Edge>> adjacencyList,
+                                            Integer minStops,
+                                            Integer maxStops,
+                                            String departure,
+                                            String destination) {
+        //memo initialization
+        HashMap<String,Integer> store = new HashMap();
+        return dfsNumberOfTripsByStopsBacktrack(adjacencyList, store, minStops,maxStops,0,departure,destination);
+
+    }
+    private Integer dfsNumberOfTripsByStopsBacktrack(HashMap<String, HashMap<String, Edge>> adjacencyList,
+                                                     HashMap<String,Integer> store,
+                                                        Integer minStops,
+                                                        Integer maxStops,
+                                                        Integer curStops,
+                                                        String position,
+                                                        String destination) {
+        //base case.
+        if (curStops >= maxStops){
+            if (curStops > maxStops){
+                return 0;
+            }
+            if (position.equals(destination)){
+                return 1;
+            }
+            return 0;
+        }
+        //checking if the current position + curStops combination is in the memo
+        String tempKey = position + String.valueOf(curStops);
+        if (store.containsKey(tempKey)){
+            return store.get(tempKey);
+        }
+        //Current result may have two states. 1 if it reached destination and 0 otherwise
+        Integer result = 0;
+        if (destination.equals(position) && curStops>=minStops && curStops<=maxStops){
+            result = 1;
+        }
+        //iterating through adjacency list
+        if (adjacencyList.containsKey(position)) {
+            for (String item : adjacencyList.get(position).keySet()) {
+                result +=  dfsNumberOfTripsByStopsBacktrack(adjacencyList,
+                        store,
+                        minStops,
+                        maxStops,
+                        curStops+1,
+                        item,
+                        destination);
+            }
+        }
+        //updating memo
+        store.put(position+String.valueOf(curStops),result);
+        return result;
     }
 
     private Integer bfsNumberOfTripsByStops(HashMap<String, HashMap<String, Edge>> adjacencyList,
@@ -141,7 +241,7 @@ public class PathGeneration {
                 //result is increments only if path is within min stops and max stops
                 if (stops >= minStops && stops <= maxStops && current.equals(destination)) {
                     result += 1;
-                    continue;
+                    //continue;
                 }
                 //for each node we check and add all it's neighbours.
                 if (adjacencyList.containsKey(current)) {
