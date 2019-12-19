@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b629ebb5-74a8-4c29-ae47-049a2671727a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VCFYQH2FyTFKX6sFzPyq0gy5OS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.interview.task" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android JUnit.PathGenerationTest.distanceForExactRoute">
+    <configuration name="PathGenerationTest.bfsNumberOfTripsByDistance" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterviewProblem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.task" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.task.PathGenerationTest" />
+      <option name="METHOD_NAME" value="bfsNumberOfTripsByDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathGenerationTest.bfsNumberOfTripsByStops" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterviewProblem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.task" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.task.PathGenerationTest" />
+      <option name="METHOD_NAME" value="bfsNumberOfTripsByStops" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathGenerationTest.distanceForExactRoute" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterviewProblem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.task" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.task.PathGenerationTest" />
+      <option name="METHOD_NAME" value="distanceForExactRoute" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathGenerationTest.shortestPathBetweenNodes" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterviewProblem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.task" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.task.PathGenerationTest" />
+      <option name="METHOD_NAME" value="shortestPathBetweenNodes" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.interview.task.Main" />
+      <module name="InterviewProblem" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7&quot;" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Android JUnit.PathGenerationTest.shortestPathBetweenNodes" />
+      <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByDistance" />
+      <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByStops" />
+      <item itemvalue="Android JUnit.PathGenerationTest.distanceForExactRoute" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.PathGenerationTest.distanceForExactRoute" />
+        <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByStops" />
+        <item itemvalue="Android JUnit.PathGenerationTest.bfsNumberOfTripsByDistance" />
+        <item itemvalue="Android JUnit.PathGenerationTest.shortestPathBetweenNodes" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b629ebb5-74a8-4c29-ae47-049a2671727a" name="Default Changelist" comment="" />
+      <created>1576749216110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576749216110</updated>
+      <workItem from="1576749217390" duration="4887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="59" width="1071" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576757349308">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1576749407927" />
+    <state x="184" y="59" width="1071" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1576757349308" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576757753319">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1576757753319" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576757753318">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1576757753318" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576757753318">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1576757753318" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576757753319">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1576757753319" />
+    <state x="0" y="31" width="703" height="837" key="SettingsEditor" timestamp="1576756823766">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="31" width="703" height="837" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576756823766" />
+    <state x="63" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576756866302">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="63" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1576756866302" />
+    <state x="138" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576756895783">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="138" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1576756895783" />
+    <state x="97" y="57" key="new project wizard" timestamp="1576754251176">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="97" y="57" key="new project wizard/0.23.1440.823@0.23.1440.823" timestamp="1576754251176" />
+  </component>
+</project>
