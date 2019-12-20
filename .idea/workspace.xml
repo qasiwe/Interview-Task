@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b629ebb5-74a8-4c29-ae47-049a2671727a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/interview/task/PathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interview/task/PathGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/com/interview/task/PathGenerationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/interview/task/PathGenerationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +170,8 @@
       <workItem from="1576760987794" duration="1121000" />
       <workItem from="1576788405488" duration="5800000" />
       <workItem from="1576794541286" duration="123000" />
+      <workItem from="1576797090686" duration="31000" />
+      <workItem from="1576850615647" duration="1012000" />
     </task>
     <servers />
   </component>
